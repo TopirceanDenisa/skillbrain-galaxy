@@ -6,11 +6,11 @@
 // Output: 0, 2, 4, 6, 8, 10
 
 function afisareNrPare(n) {
-  let NrPar = [];
+  let nrPar = [];
   for (let i = 0; i <= n; i += 2) {
-    NrPar.push(i);
+    nrPar.push(i);
   }
-  console.log(NrPar.join(', '));
+  console.log(nrPar.join(', '));
 }
 
 afisareNrPare(10);

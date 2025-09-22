@@ -14,11 +14,15 @@
 // let number = [1, 20, -20];
 // let number = [1, -5, 20, -34, 16, 29, 36, -4];
 
-let number = [3.45, -2.68, 356, -75.96, 64, 19.28];
-let sumNumber = 0;
+function getSum(list) {
+  let sumNumber = 0;
 
-for (let i = 0; i < number.length; i++) {
-  sumNumber += number[i];
+  for (let i = 0; i < list.length; i++) {
+    sumNumber += list[i];
+  }
+
+  return sumNumber;
 }
 
-console.log('Rezultatul este:', sumNumber);
+let number = [3.45, -2.68, 356, -75.96, 64, 19.28];
+console.log('Rezultatul este:', getSum(number));
