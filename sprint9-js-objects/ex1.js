@@ -26,26 +26,3 @@ function creeazaReteta(titlu, portii, ingrediente) {
 }
 
 creeazaReteta('Pizza', 3, ['sunca', 'cas', 'ketchup']);
-console.log();
-
-// Aici se afiseaza o instrucțiune console.log pentru fiecare
-
-function creeazaReteta(titlu, portii, ingrediente) {
-  const reteta = {
-    titlu: titlu,
-    portii: portii,
-    ingrediente: ingrediente,
-  };
-
-  console.log('Titlu: ' + reteta.titlu);
-  console.log('Porții: ' + reteta.portii);
-
-  console.log('Ingrediente:');
-  console.log('- ' + reteta.ingrediente[0]);
-  console.log('- ' + reteta.ingrediente[1]);
-  console.log('- ' + reteta.ingrediente[2]);
-
-  return reteta;
-}
-
-creeazaReteta('Pizza', 3, ['sunca', 'cas', 'ketchup']);
