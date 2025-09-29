@@ -7,17 +7,19 @@
 // Input: titlu = “Pizza”, portii = 3, ingrediente = [“sunca”, “cas”, “ketchup”]
 // Output: { titlu: “Pizza”, portii: 3, ingrediente: [”sunca”, “cas”, “ketchup”] }
 
-// Dacă se va lucra cu mai multe ingrediente (nu doar 3)
 function creeazaReteta(titlu, portii, ingrediente) {
+  const ingredienteCopiate = [...ingrediente];
+
   const reteta = {
     titlu: titlu,
     portii: portii,
-    ingrediente: ingrediente,
+    ingrediente: ingredienteCopiate,
   };
 
   console.log('Titlu: ' + reteta.titlu);
   console.log('Portii: ' + reteta.portii);
   console.log('Ingrediente:');
+
   for (let i = 0; i < reteta.ingrediente.length; i++) {
     console.log('- ' + reteta.ingrediente[i]);
   }
