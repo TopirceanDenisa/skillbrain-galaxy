@@ -13,19 +13,18 @@
 // Hint: Pentru a rezolva problema, vom folosi operatorul spread / rest (...) pentru a defini argumentele funcției:
 // const addNumber = (…argumente) ⇒ {}
 
-function addNumber() {
+function addNumber(...argumente) {
   let suma = 0;
 
-  for (let i = 0; i < arguments.length; i++) {
-    suma += arguments[i];
+  for (let i = 0; i < argumente.length; i++) {
+    suma += argumente[i];
   }
 
-  console.log('Suma numerelor ' + Array.from(arguments).join(', ') + ' este: ' + suma);
-
+  console.log('Suma numerelor ' + argumente.join(', ') + ' este: ' + suma);
   return suma;
 }
 
+addNumber(5, 10, 15);
 addNumber(1, 2, 3);
 addNumber(1, 2, 3, 4, 5);
 addNumber(10);
-addNumber();
