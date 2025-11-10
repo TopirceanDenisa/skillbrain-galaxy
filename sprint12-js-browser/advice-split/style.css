@@ -1,0 +1,114 @@
+:root {
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1f2632;
+  font-family: 'Manrope', sans-serif;
+  color: #d9d9d9;
+}
+
+.card {
+  background-color: #313a49;
+  border-radius: 15px;
+  padding: 2rem;
+  text-align: center;
+  width: 90%;
+  max-width: 550px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.advice-id {
+  color: #52ffa8;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.advice-text {
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background: #d9d9d9;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn {
+  background-color: #53ffab;
+  border: none;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px #53ffab;
+}
+
+.btn img {
+  width: 24px;
+  height: 24px;
+  fill: #1f2632;
+}
+
+.voice-btn {
+  background-color: #313a49;
+  border: 2px solid #fff;
+  color: #53ffab;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding-bottom: 5px;
+}
+
+.voice-btn:hover {
+  background-color: #53ffab;
+  color: #1f2632;
+}
