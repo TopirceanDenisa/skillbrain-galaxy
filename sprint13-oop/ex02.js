@@ -44,8 +44,8 @@ class MasinaDeCurse extends Masina {
 }
 
 function main() {
-  const masina1 = new MasinaDeCurse('Bugatti', 'Chiron', 'Albastru', '15000');
-  const masina2 = new MasinaDeCurse('McLaren', '720S', 'Portocaliu', '22000');
+  const masina1 = new MasinaDeCurse('Bugatti', 'Chiron', 'Albastru', 15000);
+  const masina2 = new MasinaDeCurse('McLaren', '720S', 'Portocaliu', 22000);
 
   console.log(masina1.detalii);
   masina1.rezultatCampionat(2);

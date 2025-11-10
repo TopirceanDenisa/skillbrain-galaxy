@@ -21,7 +21,6 @@
 // Masina[marca=Mazda, model=CX-5, culoare=Verde, kilometraj=111 000]
 // Masina[marca=Dacia, model=BIGGSTER, culoare=Albastru, kilometraj=20 000]
 
-// Definim clasa Masina
 class Masina {
   constructor(marca, model, culoare, kilometraj) {
     this.marca = marca;
@@ -36,9 +35,9 @@ class Masina {
 }
 
 function main() {
-  const masina1 = new Masina('VOLVO', 'XC-60', 'Negru', '234000');
-  const masina2 = new Masina('Mazda', 'CX-5', 'Verde', '111000');
-  const masina3 = new Masina('Dacia', 'BIGGSTER', 'Albastru', '20000');
+  const masina1 = new Masina('VOLVO', 'XC-60', 'Negru', 234000);
+  const masina2 = new Masina('Mazda', 'CX-5', 'Verde', 111000);
+  const masina3 = new Masina('Dacia', 'BIGGSTER', 'Albastru', 20000);
 
   console.log(masina1.proprietati);
   console.log(masina2.proprietati);
